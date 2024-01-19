@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+background-color: ivory;}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header-name {
+  margin: 50px;
+}
+
+.insta-link a {
+  border:solid #5cb6bd;
+  border-radius: 5px;
+  color: #5cb6bd;
+  display: flex;
+  margin: 50px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#menu-button {
+  padding: 0px;
+  margin-top: -40px;
+  margin-right: 30px;
+}
