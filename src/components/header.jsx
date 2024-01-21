@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Button, Fade, Typography } from '@mui/material';
+import { Button, Fade, Link, Typography } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -34,7 +34,8 @@ const Header = () => {
         padding:1,
       }}>menu</MenuIcon>
     </Button>
-    
+    <div className='menu'>
+
     <Menu
       id='site-menu'
       anchorEl={anchorEl}
@@ -45,11 +46,20 @@ const Header = () => {
         'aria-labelledby': 'menu-button',
       }}
     >
-      <MenuItem onClick={handleClose}>Home</MenuItem>
-      <MenuItem onClick={handleClose}>About</MenuItem>
-      <MenuItem onClick={handleClose}>Gallery</MenuItem>
-      <MenuItem onClick={handleClose}>Shop</MenuItem>
+      <MenuItem onClick={handleClose}>
+        <Link href={'/'} underline='none' color={'#5cb6bd'}>Home</Link>
+      </MenuItem>
+      <MenuItem onClick={handleClose}>
+        <Link href={'/about'} underline='none' color={'#5cb6bd'}>About</Link>
+      </MenuItem>
+      <MenuItem onClick={handleClose}>
+        <Link href={'/gallery'} underline='none' color={'#5cb6bd'}>Gallery</Link>
+      </MenuItem>
+      <MenuItem onClick={handleClose}>
+        <Link href={'/shop'} underline='none' color={'#5cb6bd'}>Shop</Link>
+      </MenuItem>
     </Menu>
+    </div>
     </div>
   )
 }
