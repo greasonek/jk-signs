@@ -7,33 +7,62 @@ body {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  flex-direction:row;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  background-color: ivory;
 }
-.header-name {
-  margin: 30px;
-  margin-left: 42%;
-  display: flex;
-  justify-content: center;
+@media (max-width: 600px) {
+  .header {
+    padding: 10px 10px;
+  }
+
+  .header-name img {
+    width: 100px;
+  }
+
+  menu-icon {
+    font-size: 40px;
+  }
 }
 
-.menu {
+@media (mid-width: 600) {
+  .header {
+    padding: 20px 40px;
+  }
+  .header-name img {
+    width: 150px;
+  }
+  .menu-icon {
+    font-size: 50px;
+  }
+}
+  
+  .header-name {
+    margin: 30px;
+    margin-left: 42%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+/* .menu {
   display: flex;
   justify-content: center;
   font-size: 30px;
   margin-right: 50px;
   margin-top: -80px;
-}
+} */
 
 .home {
-  position: relative;
+  /* position: relative;
   height: 100vh;
   width: 80vw;
-  margin: auto;
+  margin: auto; */
   background-image: url('./assets/imgs/JK-home.jpg');
   background-size:cover;
-  background-position:top;
+  background-position:center;
+  background-repeat: 'no-repeat';
   background-color: rgba(255,255,255,0.5);
 }
 .home::before {
@@ -72,7 +101,7 @@ body {
 }
 .insta-link a {
   border:solid #5cb6bd;
-  border-radius: 5px;
+  border-radius: 4px;
   color: #5cb6bd;
   display: flex;
   margin: 20px;

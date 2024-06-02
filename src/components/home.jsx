@@ -1,18 +1,17 @@
-import { Button, Link } from "@mui/material";
-// import logo from '../assets/imgs/JK-logo.png'
+import { Button, Grid, Link } from "@mui/material";
 
 const Home = () => {
   
   return (
-    <div className="home">
-    {/* <div className='header-name'>
-    <Button>
-      <Link href={'/'} underline='none' color={'#5cb6bd'}>
-        <img src= {logo} alt='logo' width={200} display='flex'/> 
-      </Link>
-    </Button>
-  </div> */}
-      <div className="gallery-button">
+    <Grid 
+      className='home'
+      container spacing={3} 
+      justifyContent={'center'} 
+      alignItems={'center'} 
+      style={{minHeight: '100vh', position: 'relative', zIndex: 1,
+        }}>
+          
+      <Grid item xs={12} sm={6} md={4} style={{ textAlign: 'center'}} className='gallery-button'>
         <Button 
           variant="contained"
           sx={{
@@ -30,8 +29,9 @@ const Home = () => {
           }}>
         <Link href={'/gallery'} underline='none' color={'ivory'}>Gallery</Link>
         </Button>
-      </div>
-      <div className="shop-button">
+      </Grid>
+
+      <Grid item xs={12} sm={6} md={4} style={{ textAlign: 'center'}}>
         <Button 
           variant="contained"
           sx={{
@@ -50,8 +50,8 @@ const Home = () => {
           <Link href={'/shop'} underline='none' color={'ivory'}>Shop</Link>
 
         </Button>
-      </div>
-      <div className="shop-button">
+      </Grid>
+      <Grid item xs={12} sm={6} md={4} style={{ textAlign: 'center'}}>
         <Button 
           variant="contained"
           sx={{
@@ -67,11 +67,11 @@ const Home = () => {
             border:'solid 3px #5cb6bd',
             borderRadius: 8,
           }}>
-           <Link href={'/contact'} underline='none' color={'ivory'}>Contact</Link>
+           <Link href={'/about'} underline='none' color={'ivory'}>Contact</Link>
 
         </Button>
-      </div>
-    </div>
+      </Grid>
+    </Grid>
   )
 }
 
