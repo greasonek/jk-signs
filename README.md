@@ -24,3 +24,7 @@
 #### June 3 2024
 
 - Added about me page content with Lorem Ipsum, Grid and styling
+
+#### June 11 2024
+
+- Added Shop components - product/products/modal/category - added some starter JSON data and have product titles rendering on SHOP page

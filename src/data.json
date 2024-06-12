@@ -1,0 +1,23 @@
+[
+  {
+    "image": "imgs/JK-home.jpg",
+    "title": "Don't be Long",
+    "description": "12 x 18 inch on wood",
+    "category": "Wood",
+    "price": "$100"
+  },
+  {
+    "image": "",
+    "title": "Non-refundable",
+    "description": "24 x 22 inch cut out on wood",
+    "category": "Wood",
+    "price": "$150"
+  },
+  {
+    "image": "",
+    "title": "Barber",
+    "description": "12 x 24 inch framed on glass",
+    "category": "Glass",
+    "price": "$120"
+  }
+]
