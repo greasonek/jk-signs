@@ -28,3 +28,7 @@
 #### June 11 2024
 
 - Added Shop components - product/products/modal/category - added some starter JSON data and have product titles rendering on SHOP page
+
+#### June 16, 2024
+
+- Added Card component to Product to make each item appear in a card, added Grid to Products to make the cards resize and move depending on viewport size. Got images to render that are in url form but still working on getting locally stored images to render on cards"
