@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from "./components/Home";
 import Shop from './components/Shop';
 import './App.css';
+import ProductModal from './components/productModal/productModal';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
       <Footer/>
+      <ProductModal/>
     </>
   )
 }
