@@ -32,3 +32,7 @@
 #### June 16, 2024
 
 - Added Card component to Product to make each item appear in a card, added Grid to Products to make the cards resize and move depending on viewport size. Got images to render that are in url form but still working on getting locally stored images to render on cards"
+
+#### June 17 2024
+
+- Stared adding store, tried to get the modal to work when user selects Quick View
